@@ -12,5 +12,9 @@
     "chai": "^3.4.1",
     "mocha": "^2.3.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "debug": ">=2.6.9",
+    "growl": ">=1.10.0",
+    "minimatch": ">=3.0.2"
+  }
 }
