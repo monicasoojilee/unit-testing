@@ -2,12 +2,20 @@
 <html>
   <head>
     <title>Mocha Tests</title>
+
+    <!-- Mocha CSS styles to give nice formatting to browser test results  -->
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+
   </head>
   <body>
+    <!-- THIS IS WHERE TEST RESULTS ARE INSERTED -->
     <div id="mocha"></div>
+
+    <!-- LOAD MOCHA AND CHAI FROM NODE_MODULES SUBFOLDERS-->
     <script src="node_modules/mocha/mocha.js"></script>
     <script src="node_modules/chai/chai.js"></script>
+    
+    <!-- ENABLE MOCHA TEST HELPERS -->
     <script>mocha.setup('bdd')</script>
 
     <!-- load code you want to test here -->
@@ -17,6 +25,7 @@
     <script src="test/arrayTest.js"></script>
     <script src="test/classNameTest.js"></script>
 
+    <!-- RUN THE TESTS: MAKE SURE TO BE AFTER THE SOURCE & TEST FILES -->
     <script>
       mocha.run();
     </script>
